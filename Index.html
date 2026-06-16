@@ -3,64 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AGRINHO 2026</title>
-
-    <!-- CSS externo -->
+    <title>EcoVida | Sustentabilidade no Dia a Dia</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- Cabeçalho -->
     <header>
-        <div class="container">
-            <h1>AGRINHO 2026</h1>
-            <p>Inovação, sustentabilidade e tecnologia no campo</p>
-        </div>
+        <div class="logo">EcoVida</div>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#dicas">Dicas</a></li>
+                <li><a href="#simulador">Simulador</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Conteúdo principal -->
     <main>
-        <section class="hero">
-            <div class="container">
-                <h2>Bem-vindo ao projeto AGRINHO</h2>
-                <p>
-                    Este projeto tem como objetivo promover ideias sustentáveis,
-                    conectando tecnologia e agricultura para um futuro melhor.
-                </p>
+        <section id="hero">
+            <h1>Pequenas ações, grandes impactos.</h1>
+            <p>Descubra como transformar a sua rotina e ajudar a preservar o nosso planeta.</p>
+            <a href="#simulador" class="btn-principal">Simule seu Impacto</a>
+        </section>
+
+        <section id="sobre">
+            <h2>Os 3 Rs da Sustentabilidade</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <h3>Reduzir</h3>
+                    <p>Diminuir o consumo de bens e serviços, evitando o desperdício de água, energia e materiais.</p>
+                </div>
+                <div class="card">
+                    <h3>Reutilizar</h3>
+                    <p>Dar uma nova utilidade a objetos que seriam descartados antes de pensar em jogá-los fora.</p>
+                </div>
+                <div class="card">
+                    <h3>Reciclar</h3>
+                    <p>Transformar materiais descartados em novos produtos, reinserindo-os no ciclo de consumo.</p>
+                </div>
             </div>
         </section>
 
-        <section class="conteudo">
-            <div class="container">
+        <section id="simulador">
+            <h2>Calculadora de Economia de Água</h2>
+            <p>Descubra quantos litros de água você pode economizar fechando a torneira enquanto escova os dentes!</p>
+            
+            <div class="formulario">
+                <label for="pessoas">Quantas pessoas moram com você?</label>
+                <input type="number" id="pessoas" min="1" value="1">
+                <button id="btn-calcular">Calcular Economia Anual</button>
+            </div>
 
-                <h2>Objetivos do projeto</h2>
-
-                <div class="card">
-                    <h3>🌱 Sustentabilidade</h3>
-                    <p>Desenvolver práticas que respeitam o meio ambiente.</p>
-                </div>
-
-                <div class="card">
-                    <h3>🚜 Tecnologia no campo</h3>
-                    <p>Usar tecnologia para melhorar a produção agrícola.</p>
-                </div>
-
-                <div class="card">
-                    <h3>💡 Inovação</h3>
-                    <p>Criar soluções criativas para o futuro do agronegócio.</p>
-                </div>
-
+            <div id="resultado" class="hidden">
+                <p>Sua casa pode economizar cerca de <strong id="litros">0</strong> litros de água por ano!</p>
             </div>
         </section>
     </main>
 
-    <!-- Rodapé -->
     <footer>
-        <p>AGRINHO 2026 - Todos os direitos reservados</p>
+        <p>&copy; 2026 EcoVida. Juntos por um futuro mais verde.</p>
     </footer>
-    
-<script src="script.js"></script>
-    
+
+    <script src="script.js"></script>
 </body>
 </html>
